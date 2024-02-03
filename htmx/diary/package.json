@@ -1,0 +1,17 @@
+{
+  "name": "diary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@junobuild/core": "^0.0.44",
+    "htmx": "^0.0.2",
+    "htmx.org": "^1.9.10"
+  }
+}

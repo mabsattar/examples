@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JunoBuild Sample App with htmx</title>
+    <!-- Include htmx library -->
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1>JunoBuild Sample App with htmx</h1>
+
+    <button hx-get="https://api.junobuild.com/data" hx-trigger="click" hx-swap="innerHTML">Fetch Data from JunoBuild</button>"
+
+    <div id="apiResult">Waiting for data...</div>
+
+    <script>
+        // Function to handle htmx events (optional)
+        function handleHtmxEvent(event) {
+            console.log("htmx event:", event);
+        }
+    
+        // Register the event handler
+        document.body.addEventListener('htmx:afterRequest', handleHtmxEvent);
+    </script>
+    
+</body>
+</html>    
+    
